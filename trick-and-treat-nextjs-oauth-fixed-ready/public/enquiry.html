@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Enquiry · Trick & Treat Training</title>
+  <link rel="icon" href="assets/img/favicon.png"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt=""> <span>Trick & Treat Training</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+    <ul id="nav-links">
+      <li class="has-dd">
+        <a href="services.html" class="dd-toggle">Services <span class="dd-caret">▾</span></a>
+        <div class="dropdown" role="menu">
+          <a href="services.html#private">Private Session</a>
+          <a href="services.html#package">5-Session Package</a>
+          <a href="services.html#walk-train">Walk & Train</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a class="btn btn-primary" href="contact.html">Book</a></li>
+    </ul>
+  </nav>
+
+  <main class="container prose">
+    <h1>Enquiry</h1>
+    
+
+    
+    <form class="form-wrap" action="https://formsubmit.co/ari@trickandtreattraining.com" method="POST" data-validate="true" novalidate>
+      <div class="form-grid">
+        <label class="full">Your name
+          <input name="name" required placeholder="Full name"/>
+        </label>
+
+        <label class="full">Your dog's name, breed and age
+          <input name="dog_details" placeholder="e.g., Luna · Border Collie · 2 years"/>
+          <span class="field-hint">If you have more than one dog, list them all here.</span>
+        </label>
+
+        <label>Email address
+          <input name="email" type="email" required placeholder="you@example.com"/>
+        </label>
+
+        <label>Mobile
+          <input name="phone" type="tel" placeholder="04.. .. .. .."/>
+        </label>
+
+        <label class="full">What are you looking for?
+          <textarea name="message" rows="8" placeholder="Tell us about your goals or any issues (e.g., pulling on lead, reactivity, recall, puppy basics)…" required></textarea>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <small class="hint">Prefer a call? <a href="tel:+61422652040">0422 652 040</a></small>
+      </div>
+
+      <input type="hidden" name="_subject" value="New enquiry from Trick & Treat Training"/>
+      <input type="hidden" name="_next" value="thanks.html"/>
+      <input type="hidden" name="_captcha" value="false"/>
+    </form>
+    
+  </main>
+</body>
+</html>
